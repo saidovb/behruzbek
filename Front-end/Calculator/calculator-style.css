@@ -1,0 +1,102 @@
+:root {
+    --background: rgb(185, 255, 233);
+    --container: rgb(0, 0, 0);
+    --button: #ff9f0a;
+    --screen: rgba(255, 255, 255, 0.253);
+    --screen2: white;
+
+    /* --background: rgb(0, 0, 0);
+    --container: rgb(255, 255, 255);
+    --button: #0aff60;
+    --screen: rgba(0, 0, 0, 0.354);
+    --screen2: rgb(0, 0, 0); */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    padding: 1.5em;
+    border-radius: 30px;
+    background-color: var(--container);
+    text-align: center;
+}
+
+.button {
+    flex: 1 0 20%;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 0.1em;
+    background-color: var(--button);
+    color: var(--screen2);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(255, 206, 44);
+}
+
+.button:active {
+    background-color: rgb(249, 255, 67);
+}
+
+.img {
+    font-size: 10px;
+    width: 8em;
+    height: 9.2em;
+    padding: 2em;
+}
+
+.screen {
+    width: 10em;
+    height: 2em;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+    font-size: 40px;
+    color: var(--screen2);
+    background-color: var(--screen);
+    text-align: right;
+    padding: 0.2em;
+}
+
+@media (max-width: 470px) {
+    .container {
+        width: 240px;
+    }
+
+    .screen {
+        font-size: 40px;
+    }
+
+    .button {
+        font-size: 25px;
+        height: 2.5em;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        width: 200px;
+    }
+
+    .screen {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 20px;
+        height: 2em;
+    }
+} 
