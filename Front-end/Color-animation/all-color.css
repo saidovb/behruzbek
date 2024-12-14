@@ -1,5 +1,5 @@
 body {
-    animation: sb infinite 30ms ease;
+    animation: sb infinite 600ms ease;
 }
 
 @keyframes sb {
