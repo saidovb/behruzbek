@@ -413,6 +413,7 @@ if holat:
 
 
 #Son topish o'yini
+import random
 tries = 0
 son = "Men o'ylagan 1 dan 10 gacha sonni toping>> "
 tugri_son = random.randint(1, 10)
